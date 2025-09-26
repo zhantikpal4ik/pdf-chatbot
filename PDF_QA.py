@@ -12,9 +12,6 @@ from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 
-# Do NOT hardcode your key; export OPENAI_API_KEY in your shell:
-#   Windows (PowerShell): $env:OPENAI_API_KEY="sk-...."
-#   macOS/Linux (bash/zsh): export OPENAI_API_KEY="sk-...."
 
 def _read_pdf_text(pdf_path: str) -> str:
     reader = PdfReader(pdf_path)
